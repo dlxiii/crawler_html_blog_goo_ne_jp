@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div class="entry-body-text"><center><h1>中学生でも解ける東大大学院入試問題（４７）</h1></center><center>2014-11-27 12:44:21</center>こんにちは。東久留米市の学習塾塾長です。<br/>
+<br/>
+予報通り晴天で昨日よりは暖かくなりましたが、気温は１６℃と寒く感じます。ここ数日、同じような天気が続くようです。<br/>
+<br/>
+さて、今回は平成２０年度東大大学院工学系研究科環境海洋工学の入試問題です。<br/>
+<br/>
+問題は、<br/>
+「ある航空会社は★で示された都市に拠点を持ち、ここから９つの都市（Ａ～Ｉ）をつなぐ以下の線で示されたような航空路線を持っている。このとき、★からスタートして、この航空会社のみを利用して各都市を一度だけ訪れるような順路をすべて示せ。<br/>
+<br/>
+但し、方向は意味を持つものとする。例えば、Ａ→ＢとＢ→Ａは意味が異なる。<br/>
+解答は　★→Ａ→Ｂ→Ｃ→Ｄ→Ｅ→Ｆ→Ｇ→Ｈ→Ｉ→★　のように記せばよい。」<br/>
+<br/>
+<div style="text-align:center"><img border="0" src="https://blogimg.goo.ne.jp/user_image/08/78/c908e9d7c2fa25c1f85cc71c4e91faa8.jpg"/><br/>
+▲問題図</div><br/>
+すべて頂点を一度だけ通る閉路を「ハミルトン閉路」と言いますが、この「ハミルトン閉路」の存在を扱うのは難しい問題ですが、この問題は難しくありません。<br/>
+<br/>
+まず、問題図が見難いので、図１のように描き直しました。<br/>
+<br/>
+<div style="text-align:center"><img border="0" src="https://blogimg.goo.ne.jp/user_image/2c/46/b73d32f442f394fda0302b95b778901b.jpg"/><br/>
+▲図１．問題図の描き直し</div><br/>
+図１のＡとＦに注目すると、始点であり終点である★と繋がっている路線以外に１本の路線しかないので、★－Ａと★－Ｆの路線は確定します。<br/>
+<br/>
+さらに、★－Ａが確定するとＡ－Ｃの路線が確定し、★－Ｆが確定するとＦ－Ｄ－Ｂの路線が確定します。図２に確定した路線と都市を赤色、乗らない路線を破線で表した途中図を示します。<br/>
+<br/>
+<div style="text-align:center"><img border="0" src="https://blogimg.goo.ne.jp/user_image/68/94/643b95b905c3ccd4867c3bdf7c60b970.jpg"/><br/>
+▲図２．途中図（１）</div><br/>
+次にＢに注目すると、Ｂ－ＣとＢ－Ｇの２つの路線がありますが、Ｂ－Ｃの路線に乗った場合、Ａ－Ｃの路線に乗らなくてはならないので、Ｃを２回訪れることになり、Ｂ－Ｃの路線には乗れません。つまり、Ｂ－Ｇの路線が確定します。図３に新たに確定した路線と都市を緑色、乗らない路線を破線せ表した途中図を示します。<br/>
+<br/>
+<div style="text-align:center"><img border="0" src="https://blogimg.goo.ne.jp/user_image/50/fa/cad347be269985254cb70a872fb863e0.jpg"/><br/>
+▲図３．途中図（２）</div><br/>
+大分シンプルになりましたが、ここで不要な都市と路線を取り去って、より簡単な図に描き直しましょう。（図４）<br/>
+<br/>
+<div style="text-align:center"><img border="0" src="https://blogimg.goo.ne.jp/user_image/3e/2f/b748e2b00352b45ddff8d68c30e048de.jpg"/><br/>
+▲図４．途中図（３）</div><br/>
+図４から判ることは、Ｃから順不同にＥ、Ｈ、Ｉを訪れてＧまで行く路線経路（または、その逆）を見つければＯＫということです。<br/>
+<br/>
+そこでＣから路線を調べてみると、Ｃ－Ｅの路線とＣ－Ｉの路線がありますが、前者の場合、図５に示すように、Ｃ－Ｅ－Ｉ－Ｈ－Ｇ、後者の場合、図６に示すように、Ｃ－Ｈ－Ｉ－Ｅ－Ｇが条件を満足する路線経路になります。<br/>
+<br/>
+<div style="text-align:center"><img border="0" src="https://blogimg.goo.ne.jp/user_image/33/96/de48dbbcf5602c5e1a975948bd019358.jpg"/><br/>
+▲図５．Ｃ－Ｅ－Ｉ－Ｈ－Ｇの路線経路</div><br/>
+<br/>
+<div style="text-align:center"><img border="0" src="https://blogimg.goo.ne.jp/user_image/32/71/71b263120137ec2a628c0741e5d0e561.jpg"/><br/>
+▲図６．Ｃ－Ｈ－Ｉ－Ｅ－Ｇの路線経路</div><br/>
+図３と図５、図６をまとめて乗らない路線を削除すると図７、図８になり、これが答えの路線経路になります。<br/>
+<br/>
+<div style="text-align:center"><img border="0" src="https://blogimg.goo.ne.jp/user_image/2f/98/740e6559c00072aa82ab60a688a23452.jpg"/><br/>
+▲図７．答えの路線経路（１）</div><br/>
+<br/>
+<div style="text-align:center"><img border="0" src="https://blogimg.goo.ne.jp/user_image/41/f0/8d682c4b571e2970fc6454b993b27273.jpg"/><br/>
+▲図８．答えの路線経路（２）</div><br/>
+したがって、解答は、<br/>
+（１）★→Ａ→Ｃ→Ｅ→Ｉ→Ｈ→Ｇ→Ｂ→Ｄ→Ｆ→★<br/>
+（２）★→Ｆ→Ｄ→Ｂ→Ｇ→Ｈ→Ｉ→Ｅ→Ｃ→Ａ→★　　←（１）の逆廻り<br/>
+（３）★→Ａ→Ｃ→Ｈ→Ｉ→Ｅ→Ｇ→Ｂ→Ｄ→Ｆ→★<br/>
+（４）★→Ｆ→Ｄ→Ｂ→Ｇ→Ｅ→Ｉ→Ｈ→Ｃ→Ａ→★　　←（３）の逆廻り<br/>
+の４通りになります。<br/>
+<br/>
+一見複雑な問題図でしたが、見易く描き直すことで考えやすくなりました。数学では図を描くことが考えやすくするポイントなので、面倒がらずに図を描く習慣を身につけましょう。<br/>
+<hr/><a href="http://caitakiyama.jimdo.com/">東久留米の学習塾</a> 学研CAIスクール 東久留米滝山校<br/>
+http://caitakiyama.jimdo.com/<br/>
+TEL 042-472-5533<br/>
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+  rdf:about="https://blog.goo.ne.jp/0424725533/e/87550e29896826320da6d5651889bdbe"
+  dc:title="中学生でも解ける東大大学院入試問題（４７）"
+  dc:date="2014-11-27T12:44:21+09:00"
+  dc:description="こんにちは。東久留米市の学習塾塾長です。
+
+予報通り晴天で昨日よりは暖かくなりましたが、気温は１６℃と寒く感じます。ここ数日、同じような天気が続くようです。
+
+さて、今回は平成２０年度東大大学院工学系研究科環境海洋工学の入試問題です。
+
+問題は、
+「ある航空会社は★で示された都市に拠点を持ち、ここから９つの都市（Ａ～Ｉ）をつなぐ以下の線で示されたような航空路線を持っている。このとき、★からスタート..."
+  dc:identifier="https://blog.goo.ne.jp/0424725533/e/87550e29896826320da6d5651889bdbe" />
+</rdf:RDF>
+--></div>
+</body>
+</html>

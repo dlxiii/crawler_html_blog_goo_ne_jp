@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div class="entry-body-text"><center><h1>中学生でも解ける東大大学院入試問題（２０２）</h1></center><center>2017-03-18 10:58:28</center>こんにちは。東久留米市の学習塾塾長です。<br/>
+<br/>
+空に薄い雲がかかっていますが陽射しは十分で、気持ちのいい陽気になりました。明日は晴天で、気温も２０℃近くになるようです。<br/>
+<br/>
+さて、今回は平成２９年度東大大学院新領域創成科学研究科環境学研究系海洋技術環境学の入試問題です。<br/>
+<br/>
+問題は、<br/>
+「段数が無限大の階段がある。ある人が、最初の０段目にいて、コインを投げて表が出たら１段上がって立ち止まり、裏が出たら２段上がって立ち止まり、これを繰り返していくとする。ただしコインの表と裏は同じ確率で出るとする。<br/>
+<br/>
+（１）４段目に立ち止まることがある確率Ｐ4を求めよ。<br/>
+<br/>
+（２）Ｎ段目に立ち止まることがある確率ＰN をＮを使った式で示し、Ｎが非常に大きくなったときにＰN が収束する値を示せ。」<br/>
+です。<br/>
+<br/>
+早速、取り掛かりましょう。<br/>
+<br/>
+（１）では、高々４段目に立ち止まる確率Ｐ4を求めるので、以下のようにすべての場合を書き上げて、計算することもできます。<br/>
+<br/>
+・０段目-（表）-１段目-（表）-２段目-（表）-３段目-（表）- ４段目　［ｐ＝１/１６］<br/>
+・０段目-（表）-１段目-（表）-２段目-（裏）-４段目　［ｐ＝１/８］<br/>
+・０段目-（表）-１段目-（裏）-３段目-（表）-４段目　［ｐ＝１/８］<br/>
+・０段目-（裏）-２段目-（表）-３段目-（表）-４段目　［ｐ＝１/８］<br/>
+・０段目-（裏）-２段目-（裏）-４段目　［ｐ＝１/４］<br/>
+から、<br/>
+Ｐ4＝１/１６＋１/８＋１/８＋１/８＋１/４＝<strong><font color="red">１１/１６</font></strong><br/>
+です。<br/>
+<br/>
+また、下図のように、漸化式を使って計算することもできます。<br/>
+<br/>
+<div style="text-align:center"><img border="0" src="https://blogimg.goo.ne.jp/user_image/5a/e2/e2cef612113b9ec1dc6b45080bc44a14.jpg"/><br/>
+▲図．漸化式を使って計算します</div><br/>
+Ｎ段目に立ち止まるのは、Ｎ－１段目でコインが表の場合とＮ－２段目でコインが裏の場合ですから、各段に立ち止まる確率をＰN、ＰN-1、ＰN-2とすると、<br/>
+<img border="0" src="https://blogimg.goo.ne.jp/user_image/48/b4/b844dd39c7975eb596c9271b45a3a2c6.jpg"/><br/>
+が成り立ちます。<br/>
+<br/>
+ここで、Ｎ＝４とすると、<br/>
+Ｐ4＝１/２・Ｐ3＋１/２・Ｐ2<br/>
+　 ＝１/２・（１/２・Ｐ2＋１/２・Ｐ1）＋１/２・Ｐ2<br/>
+　 ＝３/４・Ｐ2＋１/４・Ｐ1<br/>
+で、Ｐ1＝１/２、Ｐ2＝１/２＋１/２・１/２＝１/２＋１/４＝３/４なので、<br/>
+Ｐ4＝３/４・３/４＋１/４・１/２＝９/１６＋１/８＝<strong><font color="red">１１/１６</font></strong><br/>
+で、前の値と同じになりました。<br/>
+<br/>
+続いて（２）です。<br/>
+<br/>
+ここは漸化式<br/>
+<img border="0" src="https://blogimg.goo.ne.jp/user_image/1a/e2/a2d7ab1ed3b7a2b0c70e841edcbab0fb.jpg"/><br/>
+からＰNを求めます。<br/>
+<br/>
+特性方程式<br/>
+<img border="0" src="https://blogimg.goo.ne.jp/user_image/4b/37/00c93c92deb0cf3d4b4d14e8316462de.jpg"/><br/>
+の解は、１と－１/２なので、<br/>
+<img border="0" src="https://blogimg.goo.ne.jp/user_image/16/c7/ff4dad1bc59d16c69a27a789769d8583.jpg"/><br/>
+と<br/>
+<img border="0" src="https://blogimg.goo.ne.jp/user_image/59/50/f6e90d2352e5d4fa1ddbf26e7fa3744b.jpg"/><br/>
+になります。<br/>
+<br/>
+これらからＰN+1 を消去して、Ｐ1＝１/２、Ｐ2＝３/４を代入すると、<br/>
+<img border="0" src="https://blogimg.goo.ne.jp/user_image/49/30/7795f88f5bceda174960c66664b9ea4f.jpg"/><br/>
+になり、ＰN をＮを使った式で表すことができました。<br/>
+<br/>
+そして、Ｎが非常に大きくなったとき、（－１/２）^(N-1) は０に近づくので、ＰN は<strong><font color="red">２/３</font></strong>に収束します。<br/>
+<br/>
+<br/>
+確率と漸化式についての基本問題です。<br/>
+<hr/><a href="http://caitakiyama.jimdo.com/">東久留米の学習塾</a> 学研CAIスクール 東久留米滝山校<br/>
+http://caitakiyama.jimdo.com/<br/>
+TEL 042-472-5533<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+  rdf:about="https://blog.goo.ne.jp/0424725533/e/cb964381c16a9ce09d7af6c7b10d395c"
+  dc:title="中学生でも解ける東大大学院入試問題（２０２）"
+  dc:date="2017-03-18T10:58:28+09:00"
+  dc:description="こんにちは。東久留米市の学習塾塾長です。
+
+空に薄い雲がかかっていますが陽射しは十分で、気持ちのいい陽気になりました。明日は晴天で、気温も２０℃近くになるようです。
+
+さて、今回は平成２９年度東大大学院新領域創成科学研究科環境学研究系海洋技術環境学の入試問題です。
+
+問題は、
+「段数が無限大の階段がある。ある人が、最初の０段目にいて、コインを投げて表が出たら１段上がって立ち止まり、裏が出たら２段上..."
+  dc:identifier="https://blog.goo.ne.jp/0424725533/e/cb964381c16a9ce09d7af6c7b10d395c" />
+</rdf:RDF>
+--></div>
+</body>
+</html>
